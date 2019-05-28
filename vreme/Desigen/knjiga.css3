@@ -1,0 +1,124 @@
+div.home {
+    style="cursor:pointer";
+    background-color:blue;
+    width= 400px;
+    height=800px;
+}
+
+.inner{
+position: absolute;
+top: 180px;
+left: 180px;
+width:400px;
+height:300px;
+float: right;
+left: 200px;
+background-color: lightgreen;
+}
+
+.innerTable{
+position: absolute;
+top: 120px;
+left: 100px;
+width:800px;
+height:300px;
+float: right;
+left: 200px;
+background-color: lightgreen;
+}
+
+body {
+    background-color: #A7FFA7;
+}
+
+header{
+  background-color: #FFB3B3;
+  border:2px solid #FF0000;
+  height:80px;
+  width:100vw;
+  text-align: center;
+}
+
+nav{
+  height:90px;
+  width:100vw;
+  background-color:#B76EFF;
+  text-align: center;
+}
+
+#life {
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    background-position: left top;
+    width: 200px;
+    height: 200px;
+    z-index:2;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+#button1 {
+    position: absolute;
+    top: 550px;
+    left: 200px;
+    border-radius: 25px;
+    background-position: left top;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    z-index:2;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+#button1:hover {
+    width: 220px;
+    height: 180px;
+    background-color: #CCCCFF;
+}
+
+
+#link{
+    position: fixed;
+    top: 400;
+    left: 0;
+    text-color: red;
+}
+
+
+
+#t01 th, td {
+    padding: 5px;
+    text-align: left;
+}
+#t01 tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+#t01 tr:nth-child(odd) {
+   background-color:#66FF66;
+}
+#t01 th	{
+    background-color: #1F4C1F;
+    color: white;
+}
+
+.as1{
+background-color:#FFB3B3;
+float: left;
+height:100vh;
+width:110px;
+}
+aside.as1 a{
+text-decoration: none;
+color: black;
+font-size: 18px;
+}
+
+aside.as1 a:hover {
+background-color: red;
+color: black;
+font-size: 23px;
+cursor:pointer;
+}
+
+

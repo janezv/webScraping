@@ -1,0 +1,134 @@
+<?php
+    session_start();
+    if ( empty($_POST) ) {
+        $now = time();
+        $hist=strtotime("-2 month",$now);
+        $nowSlo=date("d.m.Y", $now);
+        $nowUSA=date("Y-m-d",$now);
+        $histSlo=date("d.m.Y", $hist);
+        $histUSA=date("Y-m-d",$hist);
+    }
+    
+    //Sortiraj-preberi iz sessiona spremenljivke
+    if(!empty($_SESSION)){
+        $histUSA = $_SESSION['startDate'];
+        $nowUSA=$_SESSION['endDate'];
+        $histSlo=$_SESSION['startDateSlo'];
+        $nowSlo=$_SESSION['endDateSlo'];
+    }
+?>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../vreme/Desigen/zgodovina.css3"><!--barve oblikae okna-->
+        <link rel="stylesheet" type="text/css" href="../vreme/Desigen/table.css3"> <!--lastnosti in animacija glavne tabele-->
+    </head>
+    <body>
+        <div id="head" style="text-align:center">
+            <table style="width: 100%">
+            <tr>
+            <td><div style="cursor:pointer; float: left"><img src="../vreme/Desigen/Home.png" onclick="home()" onmouseover="this.width='60'" onmouseout="this.width='50'"></div>
+            </td><td><h1>Zgodovina temperaturnih podatkov iz ARSO </h></td>
+            </tr>
+            </table>
+        </div>
+        <br>
+        <form method="post" action="temper.php" >
+            <table style="width:65%; background-color: #66FF66">
+                <tr><td><b>Prikaži:</b></td>
+                <td>Od datuma:<input id="i1" type="text" style="width: 80px;" name="startDate" value="<?php if(empty($_POST))echo $histSlo;
+                                                                                       else echo $_POST['startDate']?>"
+                </td><td> ---------> </td>
+                <td>Do datuma:<input id="i2" type="text" style="width: 80px;" name="endDate" value="<?php if(empty($_POST))echo $nowSlo;
+                                                                                       else echo $_POST['endDate']?>"></td>
+                <td><input type="submit" VALUE = "Potrdi"></td></tr>
+            </table>
+        </form>
+        <table id=t01 border='1' style='width:80%'>
+        <tr><th>Dan</th><th><a href="/vreme/temper.php?sort=Kr">◊ Kredarica</a></th><th>◊ Ljubljana</th><th>◊ Koper</th></tr>
+
+        
+        <script>
+            function home(){
+                window.location='../vreme/index.php';
+            }
+            function sortInput(x1,x2){
+                document.getElementById("i1").value=x1;
+                document.getElementById("i2").value=x2;
+            }
+        </script>
+    </body>
+</html>
+<?php
+    require_once ('../vreme/handlingDB.inc');
+    $queryDB= new HandlingDB;
+    if ( !empty($_POST) ){
+        //preberi start in stop datum iz _POST ter ju pretvori v USA zapis
+        $startSlo=$_POST['startDate'];
+        $endSlo=$_POST['endDate'];
+        $start=strtotime($startSlo);
+        $end=strtotime($endSlo);
+        $histUSA=date("Y-m-d",$start);
+        $nowUSA=date("Y-m-d",$end);
+        //Sortiraj-zapisi v session
+        $_SESSION['startDatePost']=$_POST['startDate'];
+        $_SESSION['endDatePost']=$_POST['endDate'];
+    }
+    
+    //povezi se v Bazo in izpisi tabelo
+    $conn=$queryDB->connectToDB("localhost", "webScreping", "webScreping", "webScreping");
+    $sql = "SELECT Dan, Kredarica, Ljubljana, Koper FROM temper
+    WHERE  Dan >= '$histUSA' AND Dan <= '$nowUSA'
+    ORDER BY Dan ASC;";
+    $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+                $date=$row["Dan"];
+                $dateIn=strtotime($date);
+                $dateSlo=date("d.m.Y",$dateIn);
+                echo "<tr><td>".$dateSlo."</td><td>".$row["Kredarica"]."</td><td>".$row["Ljubljana"]."</td><td>".$row["Koper"]."</td></tr>";
+            }
+        }
+
+
+    
+//Sortiraj-sortiranje podatkov po kliku iz glave tabele    
+    $_SESSION['startDate'] = $histUSA;
+    $_SESSION['endDate'] = $nowUSA;
+    $tim1=strtotime($histUSA);
+    $tim2=strtotime($nowUSA);
+    $histSlo=date("d.m.Y",$tim1);
+    $nowSlo=date("d.m.Y",$tim2);
+
+    
+    if  ($_GET['sort']=='Kr'){
+        $_SESSION['count']++;
+        echo "<script>sortInput('$histSlo','$nowSlo');</script>";
+        
+        if ($_SESSION['count']%2==0){
+                //povezi se v Bazo in izpisi tabelo
+                $conn=$queryDB->connectToDB("localhost", "webScreping", "webScreping", "webScreping");
+                $sql = "SELECT Dan, Kredarica, Ljubljana, Koper FROM temper
+                WHERE  Dan >= '$histUSA' AND Dan <= '$nowUSA'
+                ORDER BY  temper.Kredarica;";
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                    echo "v if-u";
+                // output data of each row
+                    while($row = mysqli_fetch_assoc($result)) {
+                        $date=$row["Dan"];
+                        $dateIn=strtotime($date);
+                        $dateSlo=date("d.m.Y",$dateIn);
+                        echo "<tr><td>".$dateSlo."</td><td>".$row["Kredarica"]."</td><td>".$row["Ljubljana"]."</td><td>".$row["Koper"]."</td></tr>";
+            }
+        }
+
+        }
+        else {
+            echo "liho";
+        }
+    }
+
+//print_r($_POST);  
+?>

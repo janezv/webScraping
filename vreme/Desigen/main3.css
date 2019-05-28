@@ -1,0 +1,104 @@
+
+/*set a size of the pictures*/
+
+*{
+   margin:0;
+   padding:0;
+   border:0;
+}
+
+/*header with sticky effect*/
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/*set a size of the pictures*/
+
+
+
+.imgNav {
+    height: 102px;
+    width: 150px;
+    padding:10px;
+}
+
+.imgNav {
+    height: 102px;
+    width: 150px;
+    padding:10px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 10vh;
+}
+
+.containter {
+background-color:black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+.left {
+background-color:red;
+ width: 20%;
+}
+.map { 
+background-color:yellow;
+ width: 49%;
+}
+.right {
+background-color:gray;
+ width: 31%;
+}
+
+.imgOnline{
+    height: 102px;
+    width: 150px;
+    padding:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

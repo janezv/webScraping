@@ -1,0 +1,84 @@
+
+*{
+   margin:0;
+   padding:0;
+   border:0;
+}
+
+/*header with sticky effect*/
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.top-container {
+  color:#3c2d80;
+  background-color: #f5b458;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  background: #3c2d80;
+  color: #f1f1f1;
+  z-index: 5;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+/*set menu*/
+/**/
+.header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3c2d80;
+}
+
+.header li {
+    float: left;
+   border-right:1px solid #bbb;
+}
+
+.header li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header li > a:hover {
+    background-color: #7b5dff;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+
+.header .imgNav:hover {
+ height:100px;
+ width: 180px;
+ padding:15px 15px 15px 15px;
+ cursor: pointer;
+}
+
+
+
+
+
+
+

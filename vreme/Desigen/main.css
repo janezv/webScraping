@@ -1,0 +1,255 @@
+
+*{
+   margin:0;
+   padding:0;
+   border:0;
+}
+
+/*header with sticky effect*/
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.top-container {
+  color:#3c2d80;
+  background-color: #f5b458;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  background: #3c2d80;
+  color: #f1f1f1;
+  z-index: 5;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+/*set menu*/
+/**/
+.header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3c2d80;
+}
+
+.header li {
+    float: left;
+   border-right:1px solid #bbb;
+}
+
+.header li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header li > a:hover {
+    background-color: #7b5dff;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+
+/*set a size of the pictures*/
+
+.imgNav {
+    height: 102px;
+    width: 150px;
+    padding:50px;
+}
+
+/*setting flex layout*/
+/*https://css-tricks.com/snippets/css/complete-guide-grid/*/
+
+.containter {
+  background-color:white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+.left {
+  background-color:#7b5dff;
+  width: 20%;
+  padding:15px;
+  height: 110%;
+}
+.map { 
+  width: 60%;
+  padding:15px;
+  margin:15px;
+  z-index: 0;
+}
+.right {
+  background-color:#7b5dff;
+  width: 20%;
+  z-index: 4;
+  padding:15px;
+  height: 110%;
+}
+
+
+/*set a width of the picture in the left panel*/
+.left .imgOnline {
+ height:160px;
+ width: 210px;
+ padding:4px;
+}
+
+.left #Kredarica:hover {
+ height:210px;
+ width: 260px;
+ padding:15px 15px 15px 15px;
+ cursor: pointer;
+}
+
+.right .imgOnline {
+ height:160px;
+ width: 210px;
+ padding:15px 15px 15px 15px;
+}
+
+.header .imgNav:hover {
+ height:100px;
+ width: 180px;
+ padding:15px 15px 15px 15px;
+ cursor: pointer;
+}
+
+/*override the default setting --> special setting for the MIDDLE DEVISES devices-tables*/
+@media only screen and (max-width: 992px) {
+
+   .left {
+      position: fixed;
+      top: 5%;
+      width: 20%;
+      height: 120vh;
+   }
+  
+   .right {
+      visibility: hidden;
+    }
+
+   .map { 
+      position: fixed;
+      top: 10%;
+      left:25%;
+      width: 60%;
+   }
+
+   .top-container{
+      visibility: hidden;
+   }
+
+   .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      width:100vw;
+      height: 10%;
+    }
+
+    .left .imgOnline {
+       height:90px;
+       width: 110px;
+       padding:4px;
+    }
+
+   .left #Kredarica {
+       position: absolute;
+       top:10%;
+    }
+
+   .left #Kredarica:hover {
+      height:110px;
+      width: 160px;
+      padding:15px 15px 15px 15px;
+      cursor: pointer;
+    }
+
+   .left #Kredarica {
+       position: absolute;
+       top:10%;
+       z-index:10;
+    }
+
+   .left .imgOnline {
+       position: absolute;
+       top:20%;
+    }
+
+
+   .header li {
+      float: left;
+      border-right: none;
+      font-size: 18px;
+    }
+
+   .header li > a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+   }
+
+}
+
+/*override the default setting --> special setting for the SMALL DEVICES-PHONES*/
+@media only screen and (max-width: 600px) {
+   .top-container{
+      visibility: hidden;
+   }
+   .header {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      visibility: visible;
+    }
+   .left {
+      visibility: hidden;
+      width: 0%;
+   }
+
+   .map {
+      width: 90%;
+      position: fixed;
+      top: 93px;
+      left:0px;
+      width: 60%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

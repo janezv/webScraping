@@ -1,0 +1,21 @@
+body {
+    background-color: #85e085;
+}
+
+#head{
+    width:200vp;
+    height:100px;
+    background-color: #4d4dff;
+}
+
+.inner{
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    width:400px;
+    height:300px;
+    float: right;
+    left: 200px;
+    background-color: lightgreen;
+}
+
