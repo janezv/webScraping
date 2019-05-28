@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Agencija RS za okolje</title>
+  <link rel="stylesheet" type="text/css" href="/stil/ogrodje.css" />
+  <link rel="stylesheet" type="text/css" href="/stil/stran.css" />
+  <link rel="stylesheet" type="text/css" href="/stil/zacetna.css" />
+  <link rel="icon" type="image/gif" href="/stil/znak.gif" />
+
+
+
+  <link rel="alternate" type="application/atom+xml" title="ARSO novice Atom Feed" href="/novice.atom" />  <link rel="alternate" type="application/atom+xml" title="ARSO obvestila Atom Feed" href="/obvestila.atom" />
+</head>
+
+<body>
+    <div id="meniz">
+    <a class="domov" href="/">&nbsp;</a>
+    <div id="meniz-l">
+      <p><a href="/en/">English</a></p>
+      <p><select onchange="window.location.href = options[selectedIndex].value;">
+        <option value="" selected="selected">Državne ustanove</option>
+        <option value="">------------------</option>
+        <option value="http://www.kpv.gov.si">Predsednik vlade</option>
+        <option value="http://www.vlada.si/">Vlada RS</option>
+        <option value="http://www.vlada.si/si/o_vladi/kdo_je_kdo/ministrstva/">Ministrstva</option>
+        <option value="http://www.up-rs.si/">Predsednik RS</option>
+        <option value="http://www.dz-rs.si/">Državni zbor</option>
+        <option value="http://www.ds-rs.si/">Državni svet</option>
+        <option value="http://www.us-rs.si/">Ustavno sodišče</option>
+        <option value="http://www.sodisce.si/">Vrhovno sodišče</option>
+        <option value="http://www.rs-rs.si/">Računsko sodišče</option>
+        <option value="http://www.varuh-rs.si/">Varuh človekovih pravic</option>
+        <option value="http://www.ip-rs.si">Informacijski pooblaščenec</option>
+        <option value="http://e-uprava.gov.si/e-uprava/">e-uprava</option>
+        <option value="http://upravneenote.gov.si/">Portal upravnih enot</option>
+      </select></p>
+      <p>
+        <a href="/o%20agenciji/">O agenciji</a>
+      </p>
+      <p>&nbsp;</p>
+<!-- Search Google -->
+<!-- slovensko lokalno -->
+        <form method="GET" action="http://www.google.com/search">
+          <input type="text" name="q" size="17" maxlength="255" value="po tem naslovu" class="srchtxt">
+          <input type="submit" name="sa" value="najdi" class="srchtxt">
+          <input type="hidden" name="sitesearch" value="www.arso.gov.si">
+	    <INPUT type="hidden" name="ie" value="UTF-8"> 
+	    <INPUT type="hidden" name="oe" value="UTF-8">
+        </form>
+<br />
+<!-- po vseh arso straneh -->
+        <form method="GET" action="http://www.google.com/search">
+          <input type="text" name="q" size="17" maxlength="255" value="po vseh ARSO straneh" class="srchtxt">
+          <input type="submit" name="sa" value="najdi" class="srchtxt">
+          <input type="hidden" name="sitesearch" value="arso.gov.si">
+	    <INPUT type="hidden" name="ie" value="UTF-8"> 
+	    <INPUT type="hidden" name="oe" value="UTF-8">
+        </form>
+<br />
+<!-- /Search Google -->
+    </div>
+  </div>
+
+  <!-- meni 1 -->
+  <table id="meni1">
+    <tr>
+      <td class="domov">
+        <a href="/">&nbsp;</a>
+      </td>
+      <td class="child2"><a href="/vreme/">vreme</a></td><td class="child3"><a href="/vode/">vode</a></td><td class="child4"><a href="/varstvo%20okolja/">varstvo okolja</a></td><td class="child5"><a href="/narava/">narava</a></td><td class="child6"><a href="/podnebne%20spremembe/">podnebne spremembe</a></td><td class="child7"><a href="/potresi/">potresi</a></td><td class="child8"><a href="/zrak/">zrak</a></td>
+    </tr>
+  </table>
+  <!-- /meni 1 -->
+  
+  <div id="lokacija">
+    <a href="/">ARSO</a>
+  </div>
+  
+  <table id="glavna">
+    <tr>
+      <td class="meni2">
+        <div class="ikonce">
+          <div class="zadeva">Portali</div>
+          <table>
+            <tr>
+              <td><a href="http://gis.arso.gov.si/atlasokolja/"><img src="/stil/ikone/atlas.gif" alt="Altas okolja" /></a></td>
+              <td><a href="http://gis.arso.gov.si/atlasokolja/">Atlas okolja</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://gis.arso.gov.si/"><img src="/stil/ikone/gis.gif" alt="GIS" /></a></td>
+              <td><a href="http://gis.arso.gov.si/">GIS spletne storitve</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://nfp-si.eionet.europa.eu/"><img src="/stil/ikone/eionet.jpg" alt="Eionet v Sloveniji" /></a></td>
+              <td><a href="http://nfp-si.eionet.europa.eu/">Eionet v Sloveniji</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://kazalci.arso.gov.si/"><img src="/stil/ikone/kazalci_okolja.jpg" alt="Kazalci okolja" /></a></td>
+              <td><a href="http://kazalci.arso.gov.si/">Kazalci okolja</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://kpv.arso.gov.si/"><img src="/stil/ikone/okolje.gif" alt="Podatkovni viri o okolju" /></a></td>
+              <td><a href="http://kpv.arso.gov.si/">Podatkovni viri o okolju</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://www.arso.gov.si/podnebne%20spremembe/Register%20emisijskih%20kuponov/"><img src="/stil/ikone/register.gif" alt="Register emisijskih kuponov" /></a></td>
+              <td><a href="http://www.arso.gov.si/podnebne%20spremembe/Register%20emisijskih%20kuponov/">Register emisijskih kuponov</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://okolje.arso.gov.si/ippc/"><img src="/stil/ikone/ippc.gif" alt="IPPC - Celovito preprečevanje in nadzor onesnaževanja" /></a></td>
+              <td><a href="http://okolje.arso.gov.si/ippc/">IPPC naprave</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://meteo.arso.gov.si/"><img src="/stil/ikone/vremenski_portal.gif" alt="Vremenski portal" /></a></td>
+              <td><a href="http://meteo.arso.gov.si/">Vremenski portal</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://sirena.arso.gov.si/"><img src="/stil/ikone/zobo.gif" alt="Ogro&#382;ene vrste" /></a></td>
+              <td><a href="https://sirena.arso.gov.si/">Ogro&#382;ene vrste</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://vode.arso.gov.si/"><img src="/stil/ikone/vode.gif" alt="Informacije o vodah" /></a></td>
+              <td><a href="http://vode.arso.gov.si/">Informacije o vodah</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://okolje.arso.gov.si/odpadki/"><img src="/stil/ikone/odpadki.gif" alt="IS-Odpadki" /></a></td>
+              <td><a href="http://okolje.arso.gov.si/odpadki/">IS-Odpadki</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://nfp-si.eionet.europa.eu/sokol/"><img src="/stil/ikone/sokol.jpg" alt="SOKOL - slike okolja" /></a></td>
+              <td><a href="http://nfp-si.eionet.europa.eu/sokol/">Slike okolja</a></td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="levi">
+	  <div class="zadeva">Zavihki</div>
+	  <ul>
+	    <li><a href="/o%20agenciji/katalog%20informacij%20javnega%20značaja/">Katalog informacij javnega značaja</a></li>
+	    <li><a href="koledar%20dogodkov.html">Koledar dogodkov</a></li>
+	    <!--li><a href="ankete.html">Ankete</a></li-->
+            <li><a href="mailto:stik@arso.gov.si">stik@arso.gov.si</a></li>
+	  </ul>
+        </div>
+
+        <div class="levi" id="znacke">
+          <a href="http://www.siq.si/index.php?id=1067&amp;cmd=vec&amp;sid=175099&amp;L="><img src="/stil/ISO_naslovnica.gif" alt="Certifikat kakovosti ISO 9001:2008" /></a>
+          <!-- 26.2.2013 TKV Ukinemo ikono in povezavo na QWEB. -->
+          <!--
+          &nbsp;
+          <a href="http://www.qwebmark.net/popup/popup.phtml?lang=EN&amp;QWEBID=109"><img src="/stil/qweb.gif" alt="QWeb Certificied site" /></a>
+          -->
+        </div>
+      </td>
+      <td class="vsebina">
+        
+        <div id="opovestila" class="siroko"><div style="background-image: url('/stil/opovestila/potresi.png');"><a href="/potresi/obvestila%20o%20potresih/">Potres 20. februarja 2016</a><br />Potres magnitude 1,7 v bližini Novega mesta<br />Agencija RS za okolje, Urad za seizmologijo in geologijo sporoča, da so seizmografi državne mreže <a href="/potresi/obvestila%20o%20potresih/">…</a></div></div>
+        
+
+<div class="zadeva">Vremenska napoved</div>
+<div id="v_napoved">
+  <table class="napoved_obeti"><tr><th colspan="2">sreda</th><th colspan="2">četrtek</th><th colspan="2">petek</th><th colspan="2">sobota</th><th colspan="2">nedelja</th></tr><tr><td class="pojav"><img alt="veter: NE" src="/stil/napoved/veter_NE.gif"/></td><td class="vreme"><a href="/vreme/napovedi%20in%20podatki/"><img alt="delno oblačno, " src="/stil/napoved/vreme_2000.gif"/></a></td><td class="pojav"><img alt="veter: SW" src="/stil/napoved/veter_SW.gif"/></td><td class="vreme"><a href="/vreme/napovedi%20in%20podatki/"><img alt="pretežno oblačno, rahel dež" src="/stil/napoved/vreme_3100.gif"/></a></td><td class="pojav"><img alt="veter: E" src="/stil/napoved/veter_E.gif"/></td><td class="vreme"><a href="/vreme/napovedi%20in%20podatki/"><img alt="oblačno, rahel dež s snegom" src="/stil/napoved/vreme_4110.gif"/></a></td><td colspan="2"><a href="/vreme/napovedi%20in%20podatki/"><img alt="oblačno, rahel dež s snegom" src="/stil/napoved/vreme_4110.gif"/></a></td><td class="pojav"><img alt="veter: NE" src="/stil/napoved/veter_NE.gif"/></td><td class="vreme"><a href="/vreme/napovedi%20in%20podatki/"><img alt="pretežno oblačno, rahel dež" src="/stil/napoved/vreme_3100.gif"/></a></td></tr><tr><td colspan="2">2 / 9</td><td colspan="2">1 / 7</td><td colspan="2">2 / 5</td><td colspan="2">1 / 7</td><td colspan="2">4 / 10</td></tr></table>
+
+
+</div>
+
+<div>
+  <div class="zadeva">Novice</div>
+<!--  <div class="novica" id="N13770"><p class="datum">24. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13770">Osveženi kazalci o vplivu okolja na zdravje</a></h2><p>V zadnjem desetletju se je močno povečal pomen dostopa do razpoložljivih, kakovostnih in zanesljivih podatkov s področja okolja in zdravja. Na podlagi zbranih kazalcev, ki kažejo odvisnost zdravja od <a href="/o%20agenciji/novice/#N13770">…</a></p></div><div class="novica" id="N13768"><p class="datum">23. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13768">Slovensko-avstrijski sporazum o uporabi meteoroloških podatkov </a></h2><h3>Agencija RS za okolje in avstrijski Centralni zavod za meteorologijo in geodinamiko podpisala Sporazum o uporabi meteoroloških podatkov.</h3><p>Vreme in podnebje se ne menita za geopolitične meje, zato je nujna izmenjava meteoroloških informacij med  meteorološkimi službami. Dostop do širšega nabora meteoroloških informacij, s katerimi <a href="/o%20agenciji/novice/#N13768">…</a></p></div><div class="novica" id="N13756"><p class="datum">17. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13756">Pojasnilo glede zadrževanja želve karete v ujetništvu</a></h2><p>Akvarij Piran v medijih zatrjuje, da je vložil prošnjo za zadrževanje zavarovane živalske vrste morske želve karete v ujetništvu in da na odgovor Ministrstva za okolje in prostor čaka že več mesecev <a href="/o%20agenciji/novice/#N13756">…</a></p></div><div class="novica" id="N13751"><p class="datum">15. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13751">Potresi ne poznajo državnih meja</a></h2><h3>Srečanje predstavnikov  Združenja seizmoloških mrež Srednje in Vzhodne Evrope</h3><p>V četrtek, 11. 2. 2016, so se na Agenciji RS za okolje srečali predstavniki partnerskih institucij  Združenja seizmoloških mrež Srednje in Vzhodne Evrope (Central and East European Earthquake <a href="/o%20agenciji/novice/#N13751">…</a></p></div> -->
+    <div class="novica" id="N13770"><p class="datum">24. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13770">Osveženi kazalci o vplivu okolja na zdravje</a></h2><p>V zadnjem desetletju se je močno povečal pomen dostopa do razpoložljivih, kakovostnih in zanesljivih podatkov s področja okolja in zdravja. Na podlagi zbranih kazalcev, ki kažejo odvisnost zdravja od <a href="/o%20agenciji/novice/#N13770">…</a></p></div><div class="novica" id="N13768"><p class="datum">23. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13768">Slovensko-avstrijski sporazum o uporabi meteoroloških podatkov </a></h2><h3>Agencija RS za okolje in avstrijski Centralni zavod za meteorologijo in geodinamiko podpisala Sporazum o uporabi meteoroloških podatkov.</h3><p>Vreme in podnebje se ne menita za geopolitične meje, zato je nujna izmenjava meteoroloških informacij med  meteorološkimi službami. Dostop do širšega nabora meteoroloških informacij, s katerimi <a href="/o%20agenciji/novice/#N13768">…</a></p></div><div class="novica" id="N13756"><p class="datum">17. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13756">Pojasnilo glede zadrževanja želve karete v ujetništvu</a></h2><p>Akvarij Piran v medijih zatrjuje, da je vložil prošnjo za zadrževanje zavarovane živalske vrste morske želve karete v ujetništvu in da na odgovor Ministrstva za okolje in prostor čaka že več mesecev <a href="/o%20agenciji/novice/#N13756">…</a></p></div><div class="novica" id="N13751"><p class="datum">15. februar 2016</p><h2><a href="/o%20agenciji/novice/#N13751">Potresi ne poznajo državnih meja</a></h2><h3>Srečanje predstavnikov  Združenja seizmoloških mrež Srednje in Vzhodne Evrope</h3><p>V četrtek, 11. 2. 2016, so se na Agenciji RS za okolje srečali predstavniki partnerskih institucij  Združenja seizmoloških mrež Srednje in Vzhodne Evrope (Central and East European Earthquake <a href="/o%20agenciji/novice/#N13751">…</a></p></div>
+  <a href="/o%20agenciji/novice/arhiv.html">arhiv</a>
+</div>
+
+<div>
+  <div class="zadeva">Obvestila</div>
+<!--  <div class="novica" id="N13741"><p class="datum">11. februar 2016</p><h2><a href="/o%20agenciji/obvestila/#N13741">Javno naznanilo - okoljevarstveno soglasje - Leopold Trebec s.p</a></h2><h3>Gradnja novih hlevov za rejo piščancev</h3><p>Agencija RS za okolje objavlja javno naznanilo v zvezi z izdajo okoljevarstvenega soglasja za gradnjo novih hlevov za rejo piščancev Leopoldu Trebcu s.p., Ostrožno brdo 5, 6255 Prem.
+
+Vpogled v <a href="/o%20agenciji/obvestila/#N13741">…</a></p></div> -->
+    <div class="novica" id="N13741"><p class="datum">11. februar 2016</p><h2><a href="/o%20agenciji/obvestila/#N13741">Javno naznanilo - okoljevarstveno soglasje - Leopold Trebec s.p</a></h2><h3>Gradnja novih hlevov za rejo piščancev</h3><p>Agencija RS za okolje objavlja javno naznanilo v zvezi z izdajo okoljevarstvenega soglasja za gradnjo novih hlevov za rejo piščancev Leopoldu Trebcu s.p., Ostrožno brdo 5, 6255 Prem.
+
+Vpogled v <a href="/o%20agenciji/obvestila/#N13741">…</a></p></div>
+  <a href="/o%20agenciji/obvestila/arhiv.html">arhiv</a>
+</div>
+
+
+
+        <div><div class="zadeva">Aktualno</div><ul><li><a href="/o%20agenciji/knji%c5%benica/mese%c4%8dni%20bilten/NASE%20OKOLJE%20-%20December%202015.pdf">Decembrska številka mesečnega biltena ARSO Naše okolje</a></li></ul></div>
+      </td>
+      <td class="meni3">
+        <div class="bliznjice"><div class="zadeva">Bližnjice</div><ul><li><a href="/potresi/obvestila%20o%20potresih/aip/">Avtomatska analiza zadnjih potresov</a></li><li><a href="/o%20agenciji/knji%c5%benica/mese%c4%8dni%20bilten/">Mesečni bilten</a></li><li><a href="/vreme/zanimivosti/">Zanimivosti o podnebju</a></li><li><a href="/o%20agenciji/EU%20sofinancira/">EU sofinancira</a></li><li><a href="/o%20agenciji/razpisi/">Razpisi</a></li><li><a href="/o%20agenciji/Javna%20naznanila/">Javna naznanila</a></li><li><a href="/podnebne%20spremembe/emisije%20toplogrednih%20plinov/osebni%20avtomobili/">CO2, onesnaževala in osebni avtomobili</a></li><li><a href="/vode/podatki/">Stanje voda</a></li><li><a href="/o%20agenciji/okoljski%20znaki/">Okoljski znaki</a></li></ul></div>
+        <div class="povezave"><div class="zadeva">Povezave</div><ul><li><a href="http://www.dv.gov.si/"> Direkcija RS za vode</a></li><li><a href="http://e-uprava.gov.si/">E-uprava</a></li><li><a href="http://mop.gov.si/">Ministrstvo za okolje in prostor</a></li><li><a href="http://www.wmo.int/">Svetovna meteorološka organizacija</a></li></ul></div>
+<!-- TKV Dam v komentar, da lahko spet uporabim, ko bo potrebno.
+	<div><a href="http://www.svecamanj.si" target="_blank"><img src="/stil/ikone/svecamanj.gif" border="0" width="180" height="121"></a></div>
+-->
+      </td>
+    </tr>
+  </table>
+
+    <div id="noga">
+    <div>
+      <h1>Kontakt</h1>
+      Agencija RS za okolje<br />
+      Vojkova 1b<br />
+      1000 Ljubljana, Slovenija<br />
+      Tel: +386 (0)1 4784 000<br />
+      Fax: +386 (0)1 4784 052<br />
+      <a href="mailto:gp.arso@gov.si">gp.arso@gov.si</a>
+    </div>
+    <div>
+      <h1>Izpostavljene vsebine</h1>
+      <a href="/o%20agenciji/generalni%20direktor/">Generalni direktor</a><br />
+      <a href="/o%20agenciji/novice/">Novice</a><br />
+      <a href="/o%20agenciji/strate%c5%a1ki%20dokumenti/">Strateški dokumenti</a><br />
+      <a href="/o%20agenciji/katalog%20informacij%20javnega%20zna%c4%8daja/">Katalog informacij javnega značaja</a><br />
+      <a href="/o%20agenciji/obvestila/">Obvestila</a><br />
+      <a href="/o%20agenciji/razpisi/">Razpisi</a><br />
+      <a href="/o%20agenciji/Javna%20naznanila/">Javna naznanila</a><br />
+    </div>
+    <div>
+      <h1>&nbsp;</h1>
+      <a href="/o%20agenciji/okoljski%20znaki/">Okoljski znaki</a><br />
+      <a href="/o%20agenciji/EU%20sofinancira/">EU sofinancira</a><br />
+      <a href="/o%20agenciji/laboratoriji/">Laboratorij</a><br />
+      <a href="/o%20agenciji/knji%c5%benica/">Knjižnica</a><br />
+      <a href="/o%20agenciji/uradne%20ure/">Uradne ure</a><br />
+      <a href="/o%20agenciji/kje%20smo/">Kje smo</a><br />
+    </div>
+    <div>
+      <h1>Povezave</h1>
+      <a href="http://www.vlada.si/">Vlada Republike Slovenije</a><br />
+      <a href="http://www.vlada.si/si/o_vladi/kdo_je_kdo/ministrstva/">Ministrstva</a><br />
+      <a href="http://www.vlada.si/si/o_vladi/seznami_in_povezave/spletna_mesta_vladnih_sluzb/">Vladne službe</a><br />
+      <a href="http://www.dz-rs.si/">Državni zbor</a><br />
+      <a href="http://e-uprava.gov.si/e-uprava/">E-uprava</a><br />
+    </div>
+  </div>
+  <div id="noga2">
+    <div>
+      &copy; Agencija Republike Slovenije za okolje
+    </div>
+    <div>
+      <a href="/omejitev_odgovornosti.html">Omejitev odgovornosti</a><br>
+      <a href="/ostraneh.html">O spletnih straneh ARSO</a>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+http://stackoverflow.com/questions/1058599/how-to-get-a-nested-element-in-beautiful-soup
+for ana in soup.findAll('a'):
+  if ana.parent.name == 'td':
+    print ana["href"]
+
+
+http://stackoverflow.com/questions/6287529/how-to-find-children-of-nodes-using-beautiful-soup
+li = soup.find('li', {'class': 'text'})
+children = li.findChildren()
+for child in children:
+    print child
+
+
+for row in table.findAll('tr'):  
+    for index, cell in enumerate(row.findAll('td')):   #enumerate je namenjen, da lahko se index uporabljam: http://effbot.org/zone/python-list.htm
+        print cell.text.replace('&nbsp;', ''),"   (",index,")"
+        arsoTabelaData.append(cell.text.replace('&nbsp;', ''))
+
+
+for table in soup.findAll('table', {'class':'theclass'} ):
+   links=table.findAll('a')
+   print links
